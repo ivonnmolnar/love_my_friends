@@ -1,0 +1,20 @@
+{
+"manifest_version" : 2,
+"name" : "Love my friend",
+"version": "69",
+"description": "A wee extension you can install on your friend's computer as they are making a lovely cup of tea for you :)",
+"permissions": [
+  "tabs"
+],
+"background" : {
+"scripts" : ["background.js"],
+"persistent" : false
+},
+"content_scripts" : [
+{
+"matches" : [
+"<all_urls>"
+],
+"js" : ["content.js"]
+}]
+}
